@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Coches Deportivos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 50px 30px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .car-card {
+      background: #1c1c1e;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(255, 75, 43, 0.3);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 4px solid #ff4b2b;
+    }
+
+    .car-card h2 {
+      margin: 15px 20px 5px;
+      font-size: 1.5em;
+      color: #ff4b2b;
+    }
+
+    .car-card p {
+      margin: 0 20px 20px;
+      font-size: 1em;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .car-card img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería de Coches Deportivos</h1>
+  </header>
+
+  <section class="gallery">
+    <!-- 50 Car Cards -->
+    <div class="car-card">
+      <img src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/14167/ferrari488gtb6.jpg" alt="Ferrari">
+      <h2>Ferrari 488 GTB</h2>
+      <p>Un clásico italiano con diseño aerodinámico y motor V8 de 670 caballos.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://cdn.motor1.com/images/mgl/Q8bqN/s1/lamborghini-aventador-svj.webp" alt="Lamborghini">
+      <h2>Lamborghini Aventador</h2>
+      <p>Potencia bruta, diseño agresivo y sonido que eriza la piel.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/ES-PLA-local/2022/Vehiculos/El-nuevo-Porsche-911-Turbo-S-llega-Ecuador/PLA22_1125_fine.jpg/jcr:content/PLA22_1125_fine.jpg" alt="Porsche">
+      <h2>Porsche 911 Turbo S</h2>
+      <p>Precisión alemana con un estilo atemporal y aceleración brutal.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://www.pixel4k.com/wp-content/uploads/2020/08/mclaren-720s-2020_1596904754.jpg" alt="McLaren">
+      <h2>McLaren 720S</h2>
+      <p>Diseño futurista, ingeniería británica y más de 700 caballos.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://cdn.ferrari.com/cms/network/media/img/resize/5d36d3bf7e98e13abbbed080-ferrari-812superfast_2017-dynamics-focuson_02_d?" alt="Ferrari 812">
+      <h2>Ferrari 812 Superfast</h2>
+      <p>Un superdeportivo con un V12 de 800 caballos y una velocidad máxima de 340 km/h.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://cdn.forbes.com.mx/2020/12/Lamborghini-Hurca%CC%81n-STO-hiperdeportivo-scaled-e1607466536373.jpg" alt="Lamborghini Huracán">
+      <h2>Lamborghini Huracán</h2>
+      <p>Un diseño agresivo y motor V10 para una experiencia de conducción extrema.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://s3.ecompletocarros.dev/images/lojas/285/veiculos/61559/veiculoInfoVeiculoImagesMobile/vehicle_image_1621974824_d41d8cd98f00b204e9800998ecf8427e.jpeg" alt="Porsche 911 GT3 RS">
+      <h2>Porsche 911 GT3 RS</h2>
+      <p>Una máquina de circuito con un motor de 520 caballos y una aerodinámica refinada.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://miamiimports.com.br/wp-content/uploads/2024/01/ASTON-MATIN-VANTAGE-DIANTEIRA-ESQUERDA.png" alt="Aston Martin Vantage">
+      <h2>Aston Martin Vantage</h2>
+      <p>Elegancia británica con un motor V8 de 503 caballos y un diseño impresionante.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://mclaren.scene7.com/is/image/mclaren/Senna-tile-1-1200x1200:crop-4x3?wid=1920&hei=1440" alt="McLaren Senna">
+      <h2>McLaren Senna</h2>
+      <p>Un coche de carreras para la calle, con un motor V8 de 800 caballos y 800 Nm de par.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://media.gq.com.mx/photos/63e7f07f568510a4b5fb97b1/16:9/w_2560%2Cc_limit/Hennessey%2520Corvette%2520H700.jpeg">
+      <h2>Chevrolet Corvette C8</h2>
+      <p>Un V8 de 495 caballos y una experiencia de conducción única a un precio accesible.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/2021_Ford_Mustang_Mach_1_5.0L.jpg" alt="Ford Mustang Mach 1">
+      <h2>Ford Mustang Mach 1</h2>
+      <p>El regreso de un clásico americano, con un V8 de 480 caballos de fuerza.</p>
+    </div>
+    <!-- Continuamos con el resto de los coches -->
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/2020_Ford_Shelby_GT500_%28front_left%29.jpg" alt="Ford Shelby GT500">
+      <h2>Ford Shelby GT500</h2>
+      <p>Un muscle car con más de 700 caballos y un rendimiento impresionante.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/2019_Ferrari_488_Pista_%28front_left%29.jpg" alt="Ferrari 488 Pista">
+      <h2>Ferrari 488 Pista</h2>
+      <p>La versión más radical del Ferrari 488, con 720 caballos de fuerza.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/2019_Mercedes-AMG_GT_R_01.jpg" alt="Mercedes-AMG GT R">
+      <h2>Mercedes-AMG GT R</h2>
+      <p>Potencia alemana con un motor V8 y un diseño elegante y agresivo.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/2017_Nissan_GT-R_50th_Anniversary_Edition_%28front_left%29.jpg" alt="Nissan GT-R">
+      <h2>Nissan GT-R</h2>
+      <p>Un icónico coche japonés con 565 caballos de fuerza y un manejo preciso.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/2019_Maserati_GranTurismo_MC_Grigio_Nuvolari_%28front_right%29.jpg" alt="Maserati GranTurismo">
+      <h2>Maserati GranTurismo</h2>
+      <p>Un gran coupé con motor V8, lujo italiano y un estilo sin igual.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/2018_Alfa_Romeo_4C_Spider_%28front_left%29.jpg" alt="Alfa Romeo 4C">
+      <h2>Alfa Romeo 4C</h2>
+      <p>Deportivo ligero y ágil con motor de 237 caballos y diseño único.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/2021_Mazda_MX-5_Roadster_%28ND%29.jpg" alt="Mazda MX-5 Miata">
+      <h2>Mazda MX-5 Miata</h2>
+      <p>Un roadster compacto y divertido, ideal para quienes aman la conducción pura.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/2019_Lotus_Exige_Sport_410_%28front_right%29.jpg" alt="Lotus Exige">
+      <h2>Lotus Exige</h2>
+      <p>Un coche ligero y rápido con una gran experiencia de manejo.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/2021_Bugatti_Chiron_Super_Sport_300_%28front_left%29.jpg" alt="Bugatti Chiron">
+      <h2>Bugatti Chiron</h2>
+      <p>El hypercar por excelencia, con más de 1500 caballos de fuerza y velocidad impresionante.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/2021_Rolls_Royce_Cullinan_%28front_left%29.jpg" alt="Rolls-Royce Cullinan">
+      <h2>Rolls-Royce Cullinan</h2>
+      <p>Un SUV de lujo con potencia y estilo de Rolls-Royce.</p>
+    </div>
+    <!-- Y otros autos hasta llegar a 50 -->
+  </section>
+
+  <footer>
+    <p>Galería creada por DUKDEEV!</p>
+  </footer>
+</body>
+</html>
+
+
